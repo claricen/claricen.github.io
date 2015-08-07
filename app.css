@@ -1,7 +1,6 @@
 /* app css stylesheet */
 html {
-  background: url('assets/img/abstracttriangles2.jpg') no-repeat center center fixed;
-  background-size: cover;
+  background-color: #ffffff;
 }
 
 body {
@@ -35,4 +34,41 @@ body {
 .menu > li:nth-child(1):before {
   content: "";
   padding: 0;
+}
+
+.header {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+}
+
+.name {
+  background: transparent url("assets/img/name.png") no-repeat scroll 0% 0% / 500px 130px;
+  width: 500px;
+  height: 130px;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: #7465d2;
+  height: 40px;
+  text-align: center;
+  padding-top: 25px;
+  z-index: 99;
+}
+
+#navigation a {
+  font-size: 14px;
+  padding: 0px 40px 0px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#navigation a:hover {
+  color: #a698ff;
 }
