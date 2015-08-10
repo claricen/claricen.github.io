@@ -13,12 +13,21 @@
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
   <link rel="stylesheet" href="assets/css/foundation.min.css"
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <script>
+$(document).ready(function(){
+    $("a").click(function(){
+        $(".name").fadeIn();
+    });
+});
+</script>
 
   <!-- Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Lato:300,700,400' rel='stylesheet' type='text/css'>
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="app.css">
+
+
 
 </head>
 <body>
@@ -41,6 +50,8 @@
   -->
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="app.js"></script>
   <script src="about/about.js"></script>
   <script src="home/home.js"></script>
