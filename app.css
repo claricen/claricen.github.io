@@ -5,7 +5,14 @@ html {
 
 body {
   font-family: 'Lato', sans-serif;
-  color: #666666;
+  background: -webkit-linear-gradient(#ffffff, #ffffff, #e5daf0);
+  background: -moz-linear-gradient(#ffffff, #ffffff, #e5daf0);
+  background: -o-linear-gradient(#ffffff, #ffffff, #e5daf0);
+  background: linear-gradient(#ffffff, #ffffff, #e5daf0);
+}
+
+.gradient-bg {
+
 }
 
 .menu {
@@ -64,8 +71,8 @@ body {
 }
 
 #navigation a {
-  font-size: 14px;
   color: #7465d2;
+  font-size: 14px;
   padding: 0px 40px 0px 40px;
   text-decoration: none;
   text-transform: uppercase;

@@ -1,1 +1,8 @@
 <p>Projects</p>
+<div class="project-container">
+	<div class="aproj" ng-repeat="project in projects">
+		<h2 ng-bind="project.name"></h2>
+		<p>{{ project.desc }}</p>
+		<p>{{ project.tools }}</p>
+	</div>
+</div>
