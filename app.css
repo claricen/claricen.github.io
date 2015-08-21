@@ -1,8 +1,5 @@
 /* app css stylesheet */
-html {
-  background-color: #ffffff;
-}
-
+html,
 body {
   font-family: 'Lato', sans-serif;
   background: -webkit-linear-gradient(#ffffff, #ffffff, #e5daf0);
@@ -61,7 +58,7 @@ body {
   color: #a698ff;
 }
 
-
+/*Home*/
 
 .title {
   margin-left: auto;
@@ -69,10 +66,19 @@ body {
 }
 
 .title h2{
+  margin-top: -22px;
   color: #7465d2;
   font-family: 'Lato', sans-serif;
   font-size: 18px;
   font-weight: 300;
+  z-index: 10;
+}
+
+.title img{
+  margin: 0 auto;
+  width: 500px;
+  max-width: 100%;
+  margin-top: 12%;
 }
 
 .name {
@@ -83,6 +89,8 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+/*About*/
 
 .about {
   width:500px;
