@@ -2,10 +2,10 @@
 html,
 body {
   font-family: 'Lato', sans-serif;
-  background: -webkit-linear-gradient(#ffffff, #ffffff, #e5daf0);
-  background: -moz-linear-gradient(#ffffff, #ffffff, #e5daf0);
-  background: -o-linear-gradient(#ffffff, #ffffff, #e5daf0);
-  background: linear-gradient(#ffffff, #ffffff, #e5daf0);
+  background: -webkit-linear-gradient(#ffffff 60%, #e5daf0);
+  background: -moz-linear-gradient(#ffffff 60%, #e5daf0);
+  background: -o-linear-gradient(#ffffff 60%, #e5daf0);
+  background: linear-gradient(#ffffff 60%, #e5daf0);
 }
 
 /*.header {
@@ -24,6 +24,18 @@ body {
 .centered {
   margin: 0 auto;
   text-align: center;
+}
+
+.inline-list {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.inline-list > li {
+  display: inline;
+  list-style-type: none;
+  padding: 0px 5px 0px 5px;
 }
 
 
@@ -77,7 +89,7 @@ body {
 .title img{
   margin: 0 auto;
   width: 500px;
-  max-width: 100%;
+  max-width: 90%;
   margin-top: 12%;
 }
 
@@ -90,13 +102,29 @@ body {
   margin-right: auto;
 }
 
+.social {
+  padding-top: 15px;
+}
+
+.social a {
+  color: #7465d2;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
 /*About*/
 
 .about {
   width:500px;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .about p{
+  text-align: left;
   font-size: 14px;
   font-weight: 300;
+  margin-top: 12%;
 }
