@@ -9,7 +9,7 @@ angular.module('myApp.projects', ['ngRoute'])
   });
 }])
 
-.controller('ProjectsCtrl', [function() {
+.controller('ProjectsCtrl', ['$scope', function($scope) {
 	$scope.projects = [
 	{
 		name: 'Math Orientation 2015 Website',
