@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
-  <link rel="stylesheet" href="assets/css/foundation.min.css">
+  <link rel="stylesheet" href="assets/css/foundation.css">
   <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
   <script type="text/javascript" src="assets/js/jquery-1.11.0.min.js"></script>
@@ -27,7 +27,7 @@
 <body>
   <nav id="navigation">
     <ul class="inline-list">
-      <li><a href="#/home">Home</a></li>
+      <li><a href="#/home"><div ng-class="path === 'home' ? 'highlight' : ''"></div>Home</a></li>
       <li><a href="#/about">About</a></li>
       <li><a href="#/projects">Projects</a></li>
       <li><a href="#/portfolio">Portfolio</a></li>
