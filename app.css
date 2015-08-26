@@ -8,7 +8,7 @@ body {
   background: -o-linear-gradient(#ffffff 55%, #e5daf0);
   background: linear-gradient(#ffffff 55%, #e5daf0);
   background-attachment: fixed;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 
@@ -155,7 +155,7 @@ a:hover {
 .title {
   margin-left: auto;
   margin-right: auto;
-  margin:bottom; 15px;
+  margin-bottom: 25px;
 }
 
 .title h2{
@@ -185,7 +185,6 @@ a:hover {
 .social {
   padding-top: 0px;
 }
-
 
 
 /*About*/
