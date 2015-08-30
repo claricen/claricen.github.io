@@ -53,25 +53,39 @@ a {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	height: 90px;
+	height: 80px;
 	text-align: center;
-	padding-top: 25px;
+	padding-top: 20px;
 	z-index: 99;
 	background:rgba(255,255,255,0.75);
-	a {
+
+	li {
+		display: inline-block;
+		font-family: 'Lato', 'Helvetica', sans-serif;
+		width: 15%;
 		font-size: 14px;
+		font-weight: 700;
+	}
+	a {
+		color: $darkpurple;
 		text-decoration: none !important;
+		text-transform: uppercase;
 		&:hover{
 			color: $lightpurple;
 		}
 	}
-	li {
-		display: inline-block;
-		color: $darkpurple;
-		text-transform: uppercase;
-		font-family: 'Lato', 'Helvetica', sans-serif;
-		width: 15%;
-		font-size: 14px;
+	.active{
+		top: 0px;
+		height: 10px;
+		background-color: $darkpurple;
+		position: absolute;
+		animation-name:myfirst;
+		animation-duration:0.5s;
+		animation-timing-function:linear;
+		/* Safari and Chrome: */
+		-webkit-animation-name:myfirst;
+		-webkit-animation-duration:0.5s;
+		-webkit-animation-timing-function:linear;
 	}
 }
 
@@ -170,21 +184,37 @@ a {
 
 /*Projects*/
 #project-container {
+	margin-top: 120px;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
 	.project {
 		img {
 			display: inline-block;
 			float: left;
+			width: 80px;
+			height: 80px;
 		}
 		.desc {
-			float: right;
+			/*float: right;*/
+			padding-left: 10px;
+			display: table-cell;
 		}
 		h2 {
+			margin: 0;
 			color: $darkpurple;
 			font-family: 'Lato', 'Helvetica', sans-serif;
 			font-size: 16px;
+			font-weight: 700;
 		}
 		p {
 			font-size: 14px;
 		}
 	}
+}
+
+@media screen and (max-width: 610px) {
+	.project-container {
+		width: 500px;
+	}		
 }
