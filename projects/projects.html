@@ -1,0 +1,12 @@
+<div class="container">
+	<div id="project-container" ng-controller="ProjectsCtrl">
+		<div class="project" ng-repeat="project in projects">
+			<img ng-src="{{project.imageUrl}}">
+			<div class="desc">
+				<a href="{{project.url}}"><h2 ng-bind="project.name"></h2></a>
+				<p>{{ project.desc }}</p>
+				<p>Tools: <em>{{ project.tools }}</em></p>
+			</div>
+		</div>
+	</div>
+</div>
