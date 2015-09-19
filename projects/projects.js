@@ -22,7 +22,7 @@ angular.module('myApp.projects', ['ngRoute'])
 		name: 'Personal website',
 		imageUrl: 'assets/img/mysite.png',
 		url: 'http://claricen.github.io/',
-		desc: 'A project to learn some AngularJS.',
+		desc: 'A project to learn some AngularJS and Sass.',
 		tools: 'HTML5, CSS3, Sass, AngularJS'}
 	// },
 	// {
