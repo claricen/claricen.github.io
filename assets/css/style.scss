@@ -1,5 +1,6 @@
 /* Variables */
 $background: #25272d;
+$linkhover: #36c1af;
 
 html,
 body {
@@ -42,8 +43,7 @@ canvas {
     width: 275px;
     height: 100%;
     top:20%;
-    left: 17%;
-    /*background-color: #cccccc;*/
+    left: 15%;
 
     h1 {
         color: #ffffff;
@@ -80,14 +80,21 @@ canvas {
         padding: 0px 5px 0px 5px; 
         a {
             color: #666666;
+            // css3 transitions
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+        }
+        a:hover {
+            color: $linkhover;
         }
     }
 }
 
 .content-wrapper {
     /*background-color: #555555;*/
-    margin-left: 40%;
-    width: 60%;
+    margin-left: 42%;
 }
 
 .content {
@@ -99,13 +106,27 @@ canvas {
 }
 
 nav {
-    font-family: 'Montserrat', 'Helvetica', sans-serif;
-    font-size: 16px;
-    text-transform: uppercase;
     ul { 
         line-height: 1.5;
         li{
             list-style-type: none;
+            a {
+                color: #ffffff;
+                font-family: 'Montserrat', 'Helvetica', sans-serif;
+                text-decoration: none;
+                font-size: 14px;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+                // css3 transitions
+                -webkit-transition: all 0.5s ease-in-out;
+                -moz-transition: all 0.5s ease-in-out;
+                -o-transition: all 0.5s ease-in-out;
+                transition: all 0.5s ease-in-out;
+            }
+
+            a:hover {
+                color: $linkhover;
+            }
         }
     }
 }
@@ -114,6 +135,7 @@ nav {
     .intro {
         width: 100%;
         position: relative;
+        left: 0;
     }
 
     .content-wrapper {
