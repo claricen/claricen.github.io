@@ -3,87 +3,121 @@ $background: #25272d;
 
 html,
 body {
-	font-family: 'Source Sans Pro', sans-serif;
-	color: #ffffff;
-	background: $background;
-/*	background: -webkit-linear-gradient(#ffffff 55%, #e5daf0);
-	background: -moz-linear-gradient(#ffffff 55%, #e5daf0);
-	background: -o-linear-gradient(#ffffff 55%, #e5daf0);
-	background: linear-gradient(#ffffff 55%, #e5daf0);*/
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #ffffff;
+    background: -webkit-linear-gradient(#000000 50%, #25272d);
+    background: -moz-linear-gradient(#000000 50%, #25272d);
+    background: -o-linear-gradient(#000000 50%, #25272d);
+    background: linear-gradient(#000000 50%, #25272d);
+    // background-color: $background;
+    background-image: url("../img/mountains_3.png")
+                      url("../img/mountains_line.png"), 
+                      ;
+    background-attachment: fixed, fixed;
+    background-position: 75% 100%, left bottom;
+    background-repeat: no-repeat, repeat-x;
+    
 }
 
 .container {
-	display: table;
-	width:100%;
+    display: table;
+    width:100%;
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+#particles-js {
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 80%;
+    position: fixed;
 }
 
 .intro {
-	position: fixed;
-	width: 275px;
-	height: 100%;
-	top:10%;
-	left: 7%;
-	/*background-color: #cccccc;*/
+    position: fixed;
+    width: 275px;
+    height: 100%;
+    top:20%;
+    left: 17%;
+    /*background-color: #cccccc;*/
 
-	h1 {
-		color: #000000;
-		font-family: 'Montserrat', 'Helvetica', sans-serif;
-		font-size: 24px;
-		letter-spacing: 2px;
-		font-weight: 700;
-		text-transform: uppercase;
-		text-align: center;
-	}
+    h1 {
+        color: #ffffff;
+        font-family: 'Montserrat', 'Helvetica', sans-serif;
+        font-size: 24px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+    }
 
-	.subtitle {
-		padding: 10px 20px 10px 20px;
-		color: #666666;
-		font-family: 'Source Sans Pro', 'Helvetica', sans-serif;
-		font-size: 12px;
-	}
+    .subtitle {
+        padding: 10px 20px 10px 20px;
+        color: #666666;
+        font-family: 'Source Sans Pro', 'Helvetica', sans-serif;
+        font-size: 12px;
+    }
 
 }
 
 .links {
-	margin: 0;
-	padding-left: 0px !important;
-	list-style-type: none; 
-	text-align: center;
+    margin: 0;
+    padding-left: 0px !important;
+    list-style-type: none; 
+    text-align: center;
 
-	ul {
-		padding-left: 0px;
-	}
+    ul {
+        padding-left: 0px;
+    }
 
-	.inline-list li {
-  	display: inline;
-  	list-style-type: none;
-  	padding: 0px 5px 0px 5px; 
-	}
+    .inline-list li {
+        display: inline;
+        list-style-type: none;
+        padding: 0px 5px 0px 5px; 
+        a {
+            color: #666666;
+        }
+    }
 }
 
 .content-wrapper {
-	/*background-color: #555555;*/
-	margin-left: 40%;
-	width: 60%;
+    /*background-color: #555555;*/
+    margin-left: 40%;
+    width: 60%;
 }
 
 .content {
-	// background-color: #ffffff;
-	position: relative;
-	left: 5%;
-	width: 80%;
+    // background-color: #ffffff;
+    position: relative;
+    left: 5%;
+    width: 80%;
 
+}
+
+nav {
+    font-family: 'Montserrat', 'Helvetica', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    ul { 
+        line-height: 1.5;
+        li{
+            list-style-type: none;
+        }
+    }
 }
 
 @media screen and (max-width: 800px) {
-	.intro {
-		width: 100%;
-		position: relative;
-	}
+    .intro {
+        width: 100%;
+        position: relative;
+    }
 
-	.content-wrapper {
-		margin-left: 0;
-		width: 100%;
-	}
+    .content-wrapper {
+        margin-left: 0;
+        width: 100%;
+    }
 }
-
