@@ -11,6 +11,8 @@
 	<!-- Stylesheets -->
 	<link type="text/css" rel="stylesheet" href="assets/css/style.css"/>
 	<link type="text/css" rel="stylesheet" href="assets/css/normalize.css"/>
+
+	<!-- Fonts and Stuff -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
@@ -28,7 +30,7 @@
 				<div id="moon">
 					<img src="assets/img/moon.svg" alt="moon" width="25px" height="25px"/>
 				</div>
-				<h1>Clarice Ng</h1>
+				<h1><a href="#/home">Clarice Ng</a></h1>
 				<div id="links"> 
 					<ul class="inline-list">
 						<li><a href="https://www.instagram.com/tsunafish" class="btn btn-default btn-lg"><i class="fa fa-instagram fa-1x"></i></a></li>
@@ -66,14 +68,27 @@
 				</div>
 			</section>
 		</div> -->
+
+		<div ng-view></div>
+
 		<div id="footer">
 		</div>
 	</div>
 
 
 	<!-- Javascript -->
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-route/angular-route.js"></script>
+	<script src="app.js"></script>
+	<script src="about/about.js"></script>
+	<script src="home/home.js"></script>
+	<script src="projects/projects.js"></script>
 	<script src="assets/js/particles.js"></script>
 	<script src="assets/js/app.js"></script>
+	<script src="components/version/version.js"></script>
+  	<script src="components/version/version-directive.js"></script>
+  	<script src="components/version/interpolate-filter.js"></script>
+
 
 </body>
 </html>
