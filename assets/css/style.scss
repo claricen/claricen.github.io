@@ -69,6 +69,19 @@ canvas {
         font-size: 12px;
     }
 
+    a {
+        text-decoration: none;
+        color: #969696;
+        // css3 transitions
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+    a:hover {
+        color: $linkhover;
+    }
+
 }
 
 #links {
