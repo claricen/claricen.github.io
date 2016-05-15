@@ -9,6 +9,7 @@ body {
   background: -moz-linear-gradient(#000000 50%, #25272d);
   background: -o-linear-gradient(#000000 50%, #25272d);
   background: linear-gradient(#000000 50%, #25272d);
+  background-attachment: fixed !important;
   width: 100%;
   height: 100%; }
   html h1,
@@ -115,6 +116,7 @@ canvas {
   /*background-color: #555555;*/ }
 
 .content {
+  padding-top: 100px;
   position: relative;
   left: 0%;
   width: 80%; }
@@ -195,7 +197,8 @@ nav ul {
 
   .content {
     margin-left: 0;
-    width: 100%; }
+    width: 100%;
+    padding-top: 0; }
 
   nav {
     margin-top: -15px; }
@@ -215,9 +218,12 @@ nav ul {
       text-align: center;
       width: 350px; }
 
-  .content-wrapper {
+  .content {
+    padding-top: 0;
     margin-left: 0;
-    width: 100%; }
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px; }
 
   nav {
     margin-top: -15px; }

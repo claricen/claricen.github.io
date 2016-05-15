@@ -13,6 +13,7 @@ body {
     background: -moz-linear-gradient(#000000 50%, #25272d);
     background: -o-linear-gradient(#000000 50%, #25272d);
     background: linear-gradient(#000000 50%, #25272d);
+    background-attachment: fixed !important;
     width: 100%;
     height: 100%;
     h1 {
@@ -156,7 +157,7 @@ canvas {
 
 .content {
     // background-color: #ffffff;
-    // padding-top: 100px;
+    padding-top: 100px;
     position: relative;
     left: 0%;
     width: 80%;
@@ -252,6 +253,7 @@ nav {
     .content {
         margin-left: 0;
         width: 100%;
+        padding-top: 0;
     }
 
     nav {
@@ -279,9 +281,12 @@ nav {
         }
     }
 
-    .content-wrapper {
+    .content {
+        padding-top: 0;
         margin-left: 0;
         width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     nav {
