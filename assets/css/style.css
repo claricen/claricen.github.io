@@ -2,13 +2,29 @@
 html,
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  color: #ffffff;
+  color: #cccccc;
+  font-size: 14px;
+  font-weight: 300;
   background: -webkit-linear-gradient(#000000 50%, #25272d);
   background: -moz-linear-gradient(#000000 50%, #25272d);
   background: -o-linear-gradient(#000000 50%, #25272d);
   background: linear-gradient(#000000 50%, #25272d);
   width: 100%;
   height: 100%; }
+  html h1,
+  body h1 {
+    color: white; }
+  html a,
+  body a {
+    text-decoration: none;
+    color: #ffffff;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+  html a:hover,
+  body a:hover {
+    color: #36c1af; }
 
 .container {
   width: 100%;
@@ -28,13 +44,13 @@ canvas {
   position: fixed; }
 
 .intro {
-  position: fixed;
   width: 275px;
   height: 100%;
   display: table-cell;
   vertical-align: center;
-  top: 30%;
-  left: 15%; }
+  padding-top: 39%;
+  float: right;
+  z-index: 99; }
   .intro #moon {
     text-align: center; }
   .intro h1 {
@@ -52,7 +68,8 @@ canvas {
     padding: 10px 20px 10px 20px;
     color: #666666;
     font-family: 'Source Sans Pro', 'Helvetica', sans-serif;
-    font-size: 12px; }
+    font-size: 12px;
+    font-weight: 400; }
   .intro a {
     text-decoration: none;
     color: #969696;
@@ -95,12 +112,11 @@ canvas {
   background-repeat: no-repeat, repeat-x; }
 
 .content-wrapper {
-  /*background-color: #555555;*/
-  margin-left: 42%; }
+  /*background-color: #555555;*/ }
 
 .content {
   position: relative;
-  left: 5%;
+  left: 0%;
   width: 80%; }
 
 nav ul {
@@ -124,6 +140,69 @@ nav ul {
     nav ul li a:hover {
       color: #36c1af; }
 
+.firstfadein {
+  -webkit-animation: fadein 2s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 2s;
+  /* Internet Explorer */
+  -o-animation: fadein 2s;
+  /* Opera < 12.1 */
+  animation: fadein 2s; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@media screen and (max-width: 992px) {
+  .intro {
+    width: 100%;
+    left: 0;
+    padding-top: 0; }
+    .intro #moon {
+      padding-top: 20px; }
+    .intro .subtitle {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      width: 400px; }
+
+  .content {
+    margin-left: 0;
+    width: 100%; }
+
+  nav {
+    margin-top: -15px; }
+    nav ul li {
+      display: inline;
+      margin-left: 7px;
+      margin-right: 7px; } }
 @media screen and (max-width: 800px) {
   .intro {
     width: 100%;

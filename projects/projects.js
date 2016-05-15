@@ -13,14 +13,12 @@ angular.module('myApp.projects', ['ngRoute'])
 	$scope.projects = [
 	{
 		name: 'Math Orientation 2015 Website',
-		imageUrl: 'assets/img/mathorient.png',
 		url: 'http://orientation.math.uwaterloo.ca/',
 		desc: 'Heavily involved with the design of the site, including making various wireframes and mockups and gathering requirements.',
 		tools: 'Photoshop, Illustrator'
 	},
 	{
 		name: 'Personal website',
-		imageUrl: 'assets/img/mysite.png',
 		url: 'http://claricen.github.io/',
 		desc: 'A project to learn some AngularJS and Sass.',
 		tools: 'HTML5, CSS3, Sass, AngularJS'}

@@ -10,10 +10,12 @@
 
 	<title>Clarice Ng</title>
 	<!-- Credits to Zion.T's Yanghwa Bridge album art for design inspiration :) -->
+	<link href="assets/img/moon.svg" type="image/png" rel="icon">
 
 	<!-- Stylesheets -->
 	<link type="text/css" rel="stylesheet" href="assets/css/style.css"/>
 	<link type="text/css" rel="stylesheet" href="assets/css/normalize.css"/>
+	<link type="text/css" rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.css"/>
 
 	<!-- Fonts and Stuff -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -30,35 +32,40 @@
 			<canvas class="" width="100%" height="40%">
 			</canvas>
 		</div>
-		<div class="intro">
-			<section id="intro">
-				<div id="moon">
-					<img src="assets/img/moon.svg" alt="moon" width="25px" height="25px"/>
+		<div class="row">
+			<div class="col-md-5">
+				<div class="intro">
+					<div id="moon">
+						<img src="assets/img/moon.svg" alt="moon" width="25px" height="25px"/>
+					</div>
+					<h1><a href="#/home">Clarice Ng</a></h1>
+					<div id="links"> 
+						<ul class="inline-list">
+							<li><a href="https://vsco.co/ziontea" class="btn btn-default btn-lg"><i class="fa fa-camera fa-1x"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/clareng" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-1x"></i></a></li>
+							<li><a href="https://github.com/claricen" class="btn btn-default btn-lg"><i class="fa fa-github fa-1x"></i></a></li>
+							<li><a href="https://www.behance.net/claricen" class="btn btn-default btn-lg"><i class="fa fa-behance fa-1x"></i></a></li> 
+							<li><a href="https://twitter.com/clare_n9" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-1x"></i></a></li> 
+						</ul>
+					</div>
+					<div class="subtitle">
+						Hi there! Thanks for stumbling across my site. There will be more links to come soon! In the meantime, you can find me elsewhere on the net, or check out my <a href="/assets/ClareNg_Resume.pdf">resume</a>. 
+					</div>
+					<nav class="links">
+						<ul class="nav">
+							<li><a href="#/about">About</a></li>
+							<li><a href="#/projects">Projects</a></li>
+							<li><a href="/assets/ClareNg_Resume.pdf">Resume</a></li>
+						</ul>
+					</nav>
 				</div>
-				<h1><a href="#/home">Clarice Ng</a></h1>
-				<div id="links"> 
-					<ul class="inline-list">
-						<li><a href="https://vsco.co/ziontea" class="btn btn-default btn-lg"><i class="fa fa-camera fa-1x"></i></a></li>
-						<li><a href="https://www.linkedin.com/in/clareng" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-1x"></i></a></li>
-						<li><a href="https://github.com/claricen" class="btn btn-default btn-lg"><i class="fa fa-github fa-1x"></i></a></li>
-						<li><a href="https://www.behance.net/claricen" class="btn btn-default btn-lg"><i class="fa fa-behance fa-1x"></i></a></li> 
-						<li><a href="https://twitter.com/clare_n9" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-1x"></i></a></li> 
-					</ul>
+			</div>
+			<div class="col-md-7">
+				<div class="content-wrapper">
+					<div ng-view></div>
 				</div>
-				<div class="subtitle">
-					Hi there! Thanks for stumbling across my site. There will be more links to come soon! In the meantime, you can find me elsewhere on the net, or check out my <a href="/assets/ClareNg_Resume.pdf">resume</a>. 
-				</div>
-				<!-- <nav class="links">
-					<ul class="nav">
-						<li><a href="#/about">About</a></li>
-						<li><a href="#/projects">Projects</a></li>
-						<li><a href="/assets/ClareNg_Resume.pdf">Resume</a></li>
-					</ul>
-				</nav> -->
-			</section>
+			</div>
 		</div>
-
-		<div ng-view></div>
 
 		<div id="footer">
 		</div>
